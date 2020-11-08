@@ -69,7 +69,6 @@ public class conditional {
         else {
             return "BLUE";
         }
-
     }
 
     public int findBestFit(int size1, int size2, int space){
@@ -90,7 +89,6 @@ public class conditional {
             else {
                 x = 0;
             }
-
         }
         return x;
     }
@@ -101,12 +99,7 @@ public class conditional {
         int total = small + big;
 
         if(total>=goal){
-            if (total>goal && !(big==goal) && !(small==goal)){
-                return false;
-            }
-            else{
-                return true;
-            }
+            return true;
         }
         else{
             return false;
